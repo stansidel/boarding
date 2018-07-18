@@ -73,4 +73,6 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  
+  config.relative_url_root = ENV['RAILS_RELATIVE_URL_ROOT'] || "/"
 end
